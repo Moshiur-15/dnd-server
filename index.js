@@ -163,11 +163,12 @@ async function run() {
     // await client.close();
   }
 }
+
 run().catch(console.dir);
+
 app.get("/", (req, res) => {
   res.send("TASK_DND.....");
 });
-
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
